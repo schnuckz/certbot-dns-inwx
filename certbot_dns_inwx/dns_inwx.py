@@ -48,7 +48,7 @@ class Authenticator(dns_common.DNSAuthenticator):
             import dns.name
             add('follow-cnames', 
                 help=('If \'true\', the plugin will follow CNAME redirects on validation records'),
-                default='true')
+                default='false')
         except ImportError:
             pass
 
